@@ -45,3 +45,10 @@ console.log("Brzina nakon ubrzanja: " + auto.brzina);
 console.log(auto.zakoci(10));
 
 console.log("trenutna boja auta je: " + auto.boja);
+
+for (kljuc in auto) {
+    let tmpkljuc = auto [kljuc];
+    if (typeof tmpkljuc == "number"){
+        console.log (kljuc + " : " + tmpkljuc);
+    }
+}
