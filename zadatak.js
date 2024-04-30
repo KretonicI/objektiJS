@@ -6,7 +6,17 @@ var auto = {
     maxBrzina: 220,
     registriran: true,
     ubrzanje: function(vrijeme) {
-        return vrijeme * 5; 
+        //this.brzina = vrijeme * 5;
+        //return this.brzina; 
+        let tmpvrijeme = 0;
+        while(this.brzina <= this.maxBrzina){
+            this.brzina = this.brzina +5;
+            if (tmpvrijeme == vrijeme) {
+                break;
+            }
+        tmpvrijeme ++;
+    }
+    return this.brzina++;
     },
 
     zakoci: function(vrijeme){
@@ -18,3 +28,7 @@ var auto = {
     },
 }
 console.log("auto JSON --> " + JSON.stringify(auto));
+
+console.log("Početna brzina: " + auto.brzina);
+console.log("Auto će  ubrzati na: " + auto.ubrzanje(2));
+console.log("Brzina nakon ubrzanja: " + auto.brzina);
