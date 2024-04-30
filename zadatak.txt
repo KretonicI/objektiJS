@@ -1,0 +1,6 @@
+1. kreiraj objekt koji reprezentira neki specifični austo, sa barem 8 svojstava od kojih su 3 funkcije (npr. ubrzaj, zakoči itd.), a jedna je također objekt.
+Probajte referencirati druge vrojednsoti objekta u finkcijama
+Savaka funkcija mora primati argumente i vraćati ih
+2.Pozovite funkcije svog objekta sa argumentima i ispišite rezultat.
+3.Sa petljom pristupi svim brojivim svojstivam tog auta objekta i ispiši vrijednosti u konzoli
+3. ispiši u konzoli razumljivu rečenici
